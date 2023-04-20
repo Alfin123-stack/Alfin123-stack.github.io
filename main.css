@@ -160,6 +160,7 @@ nav .link .nav-item .nav-link:hover::after {
 }
 .desain img {
   width: 100%;
+  border-radius: 5%;
 }
 @media screen and (max-width: 992px) {
   .desain {
@@ -172,6 +173,14 @@ nav .link .nav-item .nav-link:hover::after {
     justify-content: center;
     margin-top: 200px;
   }
+}
+
+.speaker-foto {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }
 
 .speaker {
@@ -227,6 +236,14 @@ nav .link .nav-item .nav-link:hover::after {
     margin-top: 30px;
     min-height: 1700px;
   }
+}
+
+.event-foto {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }
 
 .event {
@@ -496,10 +513,5 @@ footer p {
 @media screen and (max-width: 600px) {
   footer p {
     font-size: 12px;
-  }
-}
-@media screen and (max-width: 600px) {
-  footer {
-    min-height: 200px;
   }
 }/*# sourceMappingURL=main.css.map */

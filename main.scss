@@ -206,6 +206,7 @@ nav{
 
     img{
         width: 100%;
+        border-radius: 5%;
     }
 
 
@@ -222,6 +223,13 @@ nav{
 }
 
 // Speaker
+
+.speaker-foto{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 .speaker{
     background-color: #fafafa;
@@ -288,6 +296,17 @@ nav{
         min-height: 1700px;
 
     }
+}
+
+
+
+// event
+
+.event-foto{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .event{
