@@ -1,0 +1,505 @@
+body {
+  box-sizing: border-box;
+  background-image: url(img/bg.jpg);
+  background-size: 100vmax;
+  background-repeat: no-repeat;
+  background-position: top center;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 1200px) {
+  body {
+    background-size: 1500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-size: 1000px;
+  }
+}
+
+nav .link .nav-item {
+  padding: 5px;
+}
+nav .link .nav-item .nav-link {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif !important;
+}
+nav .link .nav-item .nav-link::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #ff4b92;
+  padding-bottom: 5px;
+  width: 0%;
+  transition: 0.7s;
+  margin: auto;
+}
+nav .link .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+.landingpage {
+  margin-top: 6em;
+}
+@media screen and (max-width: 600px) {
+  .landingpage {
+    margin-top: 3em;
+  }
+}
+.landingpage h1 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+@media screen and (max-width: 600px) {
+  .landingpage h1 {
+    font-size: 40px;
+  }
+}
+.landingpage p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .landingpage p {
+    font-size: 15px;
+  }
+}
+.landingpage i {
+  color: #ff4b92 !important;
+}
+.landingpage span {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  .landingpage span {
+    font-size: 13px;
+  }
+}
+.landingpage a {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  background-color: #ff4b92 !important;
+  border: 1px solid #ff4b92;
+  border-radius: 0px;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.landingpage a:hover {
+  border: 1px solid #ff4b92;
+  color: #ff4b92;
+  background-color: white !important;
+}
+
+.landingpage h1, .landingpage p, .landingpage span, .landingpage i {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+  .landingpage h1, .landingpage p, .landingpage a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.desain {
+  margin-top: 400px;
+  min-height: 500px;
+}
+.desain h1 {
+  color: rgb(58, 61, 255);
+  font-size: 50px;
+  font-weight: bolder;
+}
+@media screen and (max-width: 600px) {
+  .desain h1 {
+    font-size: 40px;
+  }
+}
+.desain p {
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(161, 174, 183);
+}
+@media screen and (max-width: 600px) {
+  .desain p {
+    font-size: 13px;
+  }
+}
+.desain .iconss i {
+  color: #ff4b92;
+  font-size: 25px;
+}
+@media screen and (max-width: 600px) {
+  .desain .iconss i {
+    font-size: 20px;
+  }
+}
+.desain .iconss .judul {
+  margin-top: 5px;
+  color: #ff4b92;
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  .desain .iconss .judul {
+    font-size: 12px;
+  }
+}
+.desain .iconss .kalimat {
+  color: rgb(161, 174, 183);
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  .desain .iconss .kalimat {
+    font-size: 12px;
+  }
+}
+.desain img {
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .desain {
+    margin-top: 500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .desain {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+  }
+}
+
+.speaker {
+  background-color: #fafafa;
+  min-height: 1050px;
+}
+.speaker h1 {
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: bolder;
+  color: rgb(58, 61, 255);
+}
+@media screen and (max-width: 600px) {
+  .speaker h1 {
+    margin-top: 50px;
+    font-size: 40px;
+  }
+}
+.speaker p {
+  margin-top: 20px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(161, 174, 183);
+}
+@media screen and (max-width: 600px) {
+  .speaker p {
+    font-size: 13px;
+  }
+}
+.speaker .profile {
+  margin-top: 40px;
+}
+.speaker .profile h3 {
+  margin-top: 30px;
+  color: #ff4b92;
+  font-weight: bolder;
+}
+.speaker .profile .jabatan {
+  margin-top: -5px;
+}
+@media screen and (max-width: 600px) {
+  .speaker .profile img {
+    text-align: center;
+  }
+}
+.speaker .profile span i {
+  color: rgb(58, 61, 255);
+  margin-right: 20px;
+}
+@media screen and (max-width: 600px) {
+  .speaker {
+    padding: 0 20px;
+    margin-top: 30px;
+    min-height: 1700px;
+  }
+}
+
+.event {
+  background-color: rgb(58, 61, 255);
+  min-height: 600px;
+  padding: 7px;
+}
+.event h1 {
+  color: #fafafa;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  font-size: 50px;
+}
+@media screen and (max-width: 600px) {
+  .event h1 {
+    font-size: 40px;
+  }
+}
+.event .carddd {
+  background-color: #fafafa;
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+.event .carddd .card-body .card-judul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.event .carddd .card-body .card-text {
+  font-size: 13px;
+  color: rgb(161, 174, 183);
+}
+.event .carddd .card-body .tanggal {
+  color: #ff4b92;
+  margin-top: 30px;
+  font-size: 13px;
+}
+@media screen and (max-width: 600px) {
+  .event {
+    min-height: 1350px;
+  }
+}
+
+.ticket {
+  background-color: #fafafa;
+}
+.ticket .row {
+  box-sizing: border-box;
+}
+.ticket .row h5 {
+  margin-top: 100px;
+  color: #ff4b92;
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+@media screen and (max-width: 600px) {
+  .ticket .row h5 {
+    font-size: 20px;
+  }
+}
+.ticket .row h1 {
+  color: rgb(58, 61, 255);
+  font-weight: bolder;
+  font-size: 50px;
+}
+@media screen and (max-width: 600px) {
+  .ticket .row h1 {
+    font-size: 40px;
+  }
+}
+.ticket .row .package {
+  background-color: #ff4b92;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ticket .row .package h2 {
+  font-weight: bolder;
+  font-size: 32px !important;
+}
+.ticket .row .deksripsi {
+  color: rgb(161, 174, 183);
+  padding: 10px 40px;
+  font-size: 14px;
+  background-color: white;
+}
+.ticket .row .price {
+  padding: 10px;
+  background-color: white;
+}
+.ticket .row .price h2 {
+  color: #ff4b92;
+  font-size: 30px;
+}
+.ticket .row .price button {
+  padding: 10px 20px;
+  border: 3px solid;
+}
+.ticket .row .contact p {
+  color: rgb(161, 174, 183);
+  font-size: 14px;
+  font-weight: 500;
+}
+.ticket .row .contact span {
+  color: rgb(58, 61, 255);
+}
+@media screen and (max-width: 600px) {
+  .ticket .row {
+    margin: 0 1px;
+  }
+}
+
+.sponsor {
+  min-height: 700px;
+}
+.sponsor h1 {
+  font-size: 50px;
+  color: rgb(58, 61, 255);
+  font-weight: bolder;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 600px) {
+  .sponsor h1 {
+    margin-top: 50px;
+    font-size: 40px;
+  }
+}
+.sponsor img {
+  width: 100%;
+}
+.sponsor hr {
+  width: 0px;
+}
+.sponsor .tombol {
+  display: flex;
+  justify-content: center;
+}
+.sponsor .tombol button {
+  border-radius: 0px;
+  padding: 10px 30px;
+  color: white;
+  background-color: #ff4b92;
+  border: 0px;
+  margin-top: 50px;
+  border: 1px solid #ff4b92;
+  transition: 0.5s;
+}
+.sponsor .tombol button:hover {
+  background-color: white;
+  color: #ff4b92;
+  border: 1px solid #ff4b92;
+}
+@media screen and (max-width: 600px) {
+  .sponsor {
+    min-height: 450px;
+  }
+}
+
+.lokasi {
+  background-color: #fafafa;
+  min-height: 900px;
+}
+.lokasi h1 {
+  font-size: 50px;
+  color: rgb(58, 61, 255);
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-weight: bolder;
+}
+@media screen and (max-width: 600px) {
+  .lokasi h1 {
+    margin-top: 50px;
+    font-size: 40px;
+  }
+}
+.lokasi .peta {
+  width: 100%;
+}
+.lokasi .peta iframe {
+  width: 100%;
+  height: 600px;
+}
+@media screen and (max-width: 600px) {
+  .lokasi .peta iframe {
+    height: 400px;
+    margin-bottom: 30px;
+  }
+}
+.lokasi .kartu {
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: 100px;
+  padding: 60px;
+  margin-right: 20px;
+}
+.lokasi .kartu .deks h1 {
+  margin-top: 0px;
+  font-size: 30px;
+  margin-bottom: 0px;
+  font-weight: bolder;
+}
+.lokasi .kartu .deks h5 {
+  color: #ff4b92;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.lokasi .kartu .deks p {
+  font-size: 14px;
+  color: rgb(161, 174, 183);
+}
+.lokasi .kartu .deks .ikon {
+  margin-bottom: 10px;
+}
+.lokasi .kartu .deks .ikon i {
+  color: rgb(58, 61, 255);
+  margin-right: 10px;
+}
+.lokasi .kartu .deks .ikon span {
+  font-size: 14px;
+  color: rgb(161, 174, 183);
+}
+@media screen and (max-width: 600px) {
+  .lokasi .kartu {
+    padding: 30px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .lokasi {
+    min-height: 950px;
+  }
+}
+
+footer img {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+footer ul li a {
+  text-transform: uppercase;
+  color: rgb(58, 61, 255);
+  text-decoration: none;
+  transition: 0.5s;
+}
+footer ul li a:hover {
+  color: #ff4b92;
+}
+@media screen and (max-width: 600px) {
+  footer ul li a {
+    font-size: 15px;
+  }
+}
+footer p {
+  color: rgb(161, 174, 183);
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  footer p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    min-height: 200px;
+  }
+}/*# sourceMappingURL=main.css.map */

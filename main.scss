@@ -1,0 +1,614 @@
+// color
+$Primary : #ff4b92;
+$secondary : rgb(58, 61, 255);
+$text : rgb(161, 174, 183);
+
+
+// 
+$font1 : 'Montserrat', sans-serif;
+$font2 : 'Roboto', sans-serif;
+
+//style
+
+body{
+    box-sizing: border-box;
+    background-image: url(img/bg.jpg);
+    background-size: 100vmax;
+    background-repeat: no-repeat;
+    background-position: top center ;
+    overflow-x: hidden;
+    // overflow: hidden;
+    
+    @media screen and (max-width: 1200px) {
+        background-size: 1500px;
+    }
+    
+    @media screen and (max-width: 600px) {
+        background-size: 1000px;
+    }
+
+   
+    
+}
+
+nav{
+    .link{
+        .nav-item{
+            padding: 5px;
+            .nav-link{
+                color: white;
+                text-transform: uppercase;
+                font-weight: 400;
+                font-family: $font2 !important;
+
+
+                &::after{
+                    content: '';
+                    display: block;
+                    border-bottom: 3px solid $Primary;
+                    padding-bottom: 5px;
+                    width: 0%;
+                    transition: .7s;
+                    margin: auto;
+                }
+
+                &:hover::after{
+                    width: 100%;
+                }
+
+
+
+            }
+        }
+    }
+
+}
+
+
+
+
+// Landing page
+
+.landingpage{
+
+    margin-top: 6em;
+
+    @media screen and (max-width: 600px) {
+        margin-top: 3em;
+    }
+
+    h1{
+        font-size: 60px;
+        font-weight: bolder;
+
+        @media screen and (max-width: 600px) {
+            font-size: 40px;
+        }
+    }
+    p{
+        margin-top: 20px;
+        font-size: 18px;
+        font-family: $font2;
+
+        @media screen and (max-width: 600px) {
+            font-size: 15px;
+        }
+    }
+    i{
+        color: $Primary !important;
+    }
+    span{
+        font-family: $font2;
+        font-size: 14px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 13px;
+        }
+    }
+
+    a{
+        text-transform: uppercase;
+        font-family: $font2;
+        background-color: $Primary !important;
+        border: 1px solid $Primary;
+        border-radius: 0px;
+        padding: 10px 30px;
+        transition: .5s;
+
+        &:hover{
+            border:1px solid $Primary;
+            color: $Primary;
+            background-color: white !important;
+        }
+    }
+}
+
+.landingpage{
+    h1,p,span,i{
+        text-shadow: 2px 2px 2px rgba(black, .3);
+        
+    }
+
+
+}
+
+.landingpage{
+    h1,p,a{
+
+        @media screen and (max-width: 600px) {
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            text-align: center;
+        }
+    }
+
+}
+
+// desain
+
+.desain{
+
+    margin-top: 400px;
+    min-height: 500px;
+
+    h1{
+        color: $secondary;
+        font-size: 50px;
+        font-weight: bolder;
+
+        @media screen and (max-width: 600px) {
+            font-size: 40px;
+        }
+    }
+
+    p{
+        margin-top: 20px;
+        font-size: 15px;
+        font-family: $font2;
+        color: $text;
+
+        @media screen and (max-width: 600px) {
+            font-size: 13px;
+        }
+    }
+
+    .iconss{
+        i{
+            color: $Primary;
+            font-size: 25px;
+
+            @media screen and (max-width: 600px) {
+                font-size: 20px;
+            }
+        }
+
+        .judul{
+            margin-top: 5px;
+            color: $Primary;
+            font-size: 14px;
+
+            @media screen and (max-width: 600px) {
+                font-size: 12px;
+            }
+        }
+
+        .kalimat{
+            color: $text;
+            font-size: 14px;
+
+            @media screen and (max-width: 600px) {
+                font-size: 12px;
+            }
+
+        }
+    }
+
+    img{
+        width: 100%;
+    }
+
+
+    @media screen and (max-width: 992px) {
+        margin-top: 500px;
+    }
+
+    @media screen and (max-width: 600px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+    }
+
+}
+
+// Speaker
+
+.speaker{
+    background-color: #fafafa;
+
+    min-height: 1050px;
+
+    h1{
+        margin-top: 50px;
+        font-size: 50px;
+        font-weight: bolder;
+        color: $secondary;
+
+        @media screen and (max-width: 600px) {
+            margin-top: 50px;
+            font-size: 40px;
+        }
+    }
+
+    p{
+        margin-top: 20px;
+        font-size: 15px;
+        font-family: $font2;
+        color: $text;
+
+        @media screen and (max-width: 600px) {
+            font-size: 13px;
+        }
+    }
+
+
+    .profile{
+        margin-top: 40px;
+
+
+        h3{
+            margin-top: 30px;
+            color: $Primary;
+            font-weight: bolder;
+        }
+        .jabatan{
+            margin-top: -5px;
+        }
+
+        img{
+            @media screen and (max-width: 600px) {
+                text-align: center;
+        
+            }
+        }
+
+        span{
+
+            i{
+                color: $secondary;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    
+    @media screen and (max-width: 600px) {
+        padding: 0 20px;
+        margin-top: 30px;
+        min-height: 1700px;
+
+    }
+}
+
+.event{
+
+    background-color: $secondary;
+    min-height: 600px;
+    padding: 7px;
+
+
+    h1{
+        color: #fafafa;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-weight: bolder;
+        font-size: 50px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 40px;
+        }
+    }
+    
+    .carddd{
+        background-color: #fafafa;
+        width: 100%;
+        min-height: 100px;
+        padding: 20px 40px;
+        text-align: center;
+        margin-top: 30px;
+        
+        .card-body{
+            .card-judul{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .card-text{
+                font-size: 13px;
+                color: $text;
+            }
+
+            .tanggal{
+                color: $Primary;
+                margin-top: 30px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        min-height: 1350px;
+
+    }
+   
+}
+
+.ticket{
+    background-color: #fafafa;
+
+    .row{
+        box-sizing: border-box;
+        h5{
+            margin-top: 100px;
+            color: $Primary;
+            margin-bottom: 0px;
+            font-size: 25px;
+
+            @media screen and (max-width: 600px) {
+                font-size: 20px;
+        
+            }
+
+        }
+        h1{
+            color: $secondary;
+            font-weight: bolder;
+            font-size: 50px;
+            @media screen and (max-width: 600px) {
+                font-size: 40px;
+        
+            }
+        }
+        
+
+        .package{
+            background-color: $Primary;
+            padding: 10px 20px ;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+
+            h2{
+                font-weight: bolder;
+                font-size: 32px !important;
+            }
+        }
+
+        .deksripsi{
+            color: $text;
+            padding: 10px 40px;
+            font-size: 14px;
+            background-color: white;
+        }
+
+        .price{
+            padding: 10px;
+            background-color: white;
+            h2{
+                color: $Primary;
+                font-size: 30px;
+
+            }
+
+            button{
+                padding: 10px 20px;
+                border: 3px solid;
+            }
+        }
+
+
+
+        .contact{
+            p{
+                color: $text;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            span{
+                color: $secondary;
+            }
+        }
+
+
+        @media screen and (max-width: 600px) {
+            margin: 0 1px;
+    
+        }
+    }
+
+
+}
+
+
+.sponsor{
+    min-height: 700px;
+    h1{
+        font-size: 50px;
+        color: $secondary;
+        font-weight: bolder;
+        margin-top: 100px;
+        margin-bottom: 80px;
+
+        @media screen and (max-width: 600px) {
+            margin-top: 50px;
+            font-size: 40px;
+    
+        }
+    }
+
+    img{
+        width: 100%;
+    }
+
+    hr{
+        width: 0px;
+    }
+
+    .tombol{
+        
+        display: flex;
+        justify-content: center;
+
+        button{
+            border-radius: 0px;
+            padding: 10px 30px;
+            color: white;
+            background-color: $Primary;
+            border: 0px;
+            margin-top: 50px;
+            border: 1px solid $Primary;
+            transition: .5s;
+            
+            &:hover{
+                background-color: white;
+                color: $Primary;
+                border: 1px solid $Primary;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        min-height: 450px;
+
+    }
+    
+}
+
+.lokasi{
+    background-color: #fafafa;
+    min-height: 900px;
+    h1{
+        font-size: 50px;
+        color: $secondary;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-weight: bolder;
+
+        @media screen and (max-width: 600px) {
+            margin-top: 50px;
+            font-size: 40px;
+    
+        }
+    }
+    .peta{
+        width: 100%;
+
+        iframe{
+            width: 100%;
+            height: 600px;
+
+            @media screen and (max-width: 600px) {
+                height: 400px;
+                margin-bottom: 30px;
+        
+            }
+        }
+
+    }
+
+    .kartu{
+        box-sizing: border-box;
+        background-color: white;
+        margin-top: 100px;
+        padding: 60px;
+        margin-right: 20px;
+        .deks{
+            h1{
+                margin-top: 0px;
+                font-size: 30px;
+                margin-bottom: 0px;
+                font-weight: bolder;
+            }
+            h5{
+                color: $Primary;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+                color: $text;
+            }
+
+            .ikon{
+                margin-bottom: 10px;
+                i{
+                    color: $secondary;
+                    margin-right: 10px;
+                }
+                span{
+                    font-size: 14px;
+                    color: $text;
+                }
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 30px;
+            margin: 10px;
+    
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        min-height: 950px;
+
+    }
+}
+
+footer{
+    img{
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+
+    }
+    ul{
+        li{
+            display: inline-block;
+            margin-right: 20px;
+
+            a{
+                text-transform: uppercase;
+                color: $secondary;
+                text-decoration: none;
+                transition: .5s;
+                &:hover{
+                    color: $Primary;
+                }
+
+                @media screen and (max-width: 600px) {
+                    font-size: 15px;
+            
+                }
+            }
+        }
+    }
+
+    p{
+        color: $text;
+        font-size: 14px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 12px;
+    
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        min-height: 200px;
+
+    }
+}
